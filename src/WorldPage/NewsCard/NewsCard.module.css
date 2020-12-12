@@ -1,0 +1,34 @@
+.NewsCard {
+  flex: 0 0 auto;
+  width: min(85%, 300px);
+  display: flex;
+  flex-direction: Row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 14px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.Image {
+  object-fit: cover;
+  width: 78px;
+  height: 78px;
+  margin-right: 10px;
+}
+
+.NewsCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.NewsCard h4 {
+  font-family: "DM Serif Display", serif;
+  color: black;
+  margin: 6px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

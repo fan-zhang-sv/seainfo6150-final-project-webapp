@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Home from "./Home.jsx";
+import WorldPage from "./WorldPage.jsx";
 
 it("renders the home component correctly", () => {
-  const { container } = render(<Home />);
+  const { container } = render(<WorldPage />);
   expect(container).toMatchSnapshot();
 });

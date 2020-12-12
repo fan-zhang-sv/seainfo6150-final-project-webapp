@@ -1,0 +1,101 @@
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CategoryButton {
+  width: 85%;
+  padding: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.PlainButton {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.SelectedButton {
+  /* color: black;
+  background-color: #e7e7e7; */
+  border: 2px solid #555555;
+  background-color: #555555;
+  color: white;
+}
+
+.CategoryButton:hover {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.TitleContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.ContentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.CategoryContainer {
+  width: 100%;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.NewsContainer {
+  position: relative;
+  top: -10px;
+  width: 100%;
+  flex: 2 0 0;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .NewsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .CategoryContainer {
+    align-items: flex-start;
+  }
+  .ContentContainer {
+    flex-direction: row;
+  }
+  .TitleContainer {
+    width: 80%;
+  }
+  .ContentContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .NewsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,28 @@
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+}
+
+h5 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+label {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}

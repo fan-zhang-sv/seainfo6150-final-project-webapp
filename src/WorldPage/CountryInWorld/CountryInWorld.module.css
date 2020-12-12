@@ -1,0 +1,25 @@
+.CountriesContent {
+  width: 100%;
+}
+
+/* .CountriesContent a {
+  display: block;
+  font-family: "DM Serif Display", serif;
+  text-decoration: none;
+} */
+
+.CountriesContent > a {
+  width: fit-content;
+  text-decoration: underline;
+  color: #000;
+}
+
+.CountryNews {
+  width: 100%;
+  /* overflow-x: scroll;
+  white-space: nowrap; */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  flex-direction: row;
+}

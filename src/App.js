@@ -1,68 +1,46 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
 
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
-import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import WorldPage from "./WorldPage/WorldPage.jsx";
+import Error from "./ErrorPage/ErrorPage.jsx";
+import Header from "./Modules/Header/Header.jsx";
+import SingleNewsPage from "./SingleNewsPage/SingleNewsPage.jsx";
+import { ccToCountryName } from "./Modules/countryCodes.jsx";
+import CountryPage from "./CountryPage/CountryPage.jsx";
+import Footer from "./Modules/Footer/Footer";
 
 function App() {
   return (
     <>
       <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
+        <Header />
       </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
+        <Route path="/" exact component={WorldPage} />
         <Route
-          path="/bar/:categoryId/:productId"
+          path="/country/:cc"
           exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
+          render={({ match }) => {
+            if (match.params.cc in ccToCountryName) {
+              return <CountryPage countryCode={match.params.cc} />;
+            } else {
+              return <Error />;
+            }
+          }}
         />
         <Route
-          path="/baz"
+          path="/news/:data"
           exact
-          render={() => <Baz content={externalContent} />}
+          render={({ match }) => <SingleNewsPage data={match.params.data} />}
         />
         <Route component={Error} />
       </Switch>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
