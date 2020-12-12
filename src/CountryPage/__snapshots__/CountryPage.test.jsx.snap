@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryPage tests renders correctly 1`] = `
+<div>
+  <div
+    class="Container"
+  >
+    <div
+      class="TitleContainer"
+    >
+      <h1>
+        United States - US
+      </h1>
+    </div>
+    <div
+      class="ContentContainer"
+    >
+      <div
+        class="CategoryContainer"
+      >
+        <button
+          class="CategoryButton SelectedButton"
+        >
+          US
+        </button>
+        <button
+          class="CategoryButton PlainButton"
+        >
+          Business
+        </button>
+        <button
+          class="CategoryButton PlainButton"
+        >
+          Entertainment
+        </button>
+        <button
+          class="CategoryButton PlainButton"
+        >
+          Politics
+        </button>
+        <button
+          class="CategoryButton PlainButton"
+        >
+          Sports
+        </button>
+        <button
+          class="CategoryButton PlainButton"
+        >
+          World
+        </button>
+      </div>
+      <div
+        class="NewsContainer"
+      />
+    </div>
+  </div>
+</div>
+`;

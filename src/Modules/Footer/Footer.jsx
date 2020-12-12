@@ -55,36 +55,58 @@ const Footer = () => {
                 <option value="jp">Japan</option>
               </select>
               <div className={styles.BreakLine} />
-              <label>
-                <input type="radio" name="selectedCategory" value="Local" />
+              <label htmlFor="localID">
+                <input
+                  type="radio"
+                  name="selectedCategory"
+                  value="Local"
+                  id="localID"
+                />
                 Local
               </label>
-              <label>
-                <input type="radio" name="selectedCategory" value="Business" />
+              <label htmlFor="businessID">
+                <input
+                  type="radio"
+                  name="selectedCategory"
+                  value="Business"
+                  id="businessID"
+                />
                 Business
               </label>
-              <label>
+              <label htmlFor="entertainmentID">
                 <input
                   type="radio"
                   name="selectedCategory"
                   value="Entertainment"
+                  id="entertainmentID"
                 />
                 Entertainment
               </label>
-              <label>
+              <label htmlFor="politicsID">
                 <input
                   type="radio"
                   name="selectedCategory"
                   value="Politics/Society"
+                  id="politicsID"
                 />
                 Politics/Society
               </label>
-              <label>
-                <input type="radio" name="selectedCategory" value="Sports" />
+              <label htmlFor="sportsID">
+                <input
+                  type="radio"
+                  name="selectedCategory"
+                  value="Sports"
+                  id="sportsID"
+                />
                 Sports
               </label>
-              <label>
-                <input type="radio" name="selectedCategory" value="World" />
+              <label htmlFor="worldID">
+                <input
+                  type="radio"
+                  name="selectedCategory"
+                  value="World"
+                  id="worldID"
+                />
                 World
               </label>
             </div>

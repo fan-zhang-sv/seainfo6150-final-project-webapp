@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header tests renders correctly 1`] = `
+<div>
+  <div
+    class="Header"
+  >
+    <h1>
+      Solid News
+    </h1>
+    <div
+      class="TopNav"
+    >
+      <a
+        href="/"
+      >
+        World
+      </a>
+      <a
+        href="/country/us"
+      >
+        US
+      </a>
+      <a
+        href="/country/ca"
+      >
+        Canada
+      </a>
+      <a
+        href="/country/gb"
+      >
+        UK
+      </a>
+      <a
+        href="/country/au"
+      >
+        Australia
+      </a>
+      <a
+        href="/country/cn"
+      >
+        China
+      </a>
+      <a
+        href="/country/jp"
+      >
+        Japan
+      </a>
+      <a
+        href="/country/404"
+      >
+        404
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsCard tests renders correctly 1`] = `
+<div>
+  <a
+    class="NewsCard"
+    href="/news/{\\"name\\"%3A\\"FDA authorizes 1st COVID-19 vaccine in United States \\"%2C\\"provider\\"%3A\\"ABC News\\"%2C\\"url\\"%3A\\"https%3A%2F%2Fwww.msn.com%2Fen-us%2Fhealth%2Fmedical%2Ffda-authorizes-1st-covid-19-vaccine-in-united-states%2Far-BB1bRB1S\\"%2C\\"imgUrl\\"%3A\\"\\"%2C\\"description\\"%3A\\"The Food and Drug Administration authorized the United States' first COVID-19 vaccine for people age 16 and over late Friday%2C a historic moment in a pandemic that has killed over 290%2C000 in this\\"}"
+  >
+    <img
+      class="Image"
+      src="https://www.bing.com/th?id=OVFT.-pPAb7rjkmMssGiyXjXE0S&pid=News"
+    />
+    <h4>
+      FDA authorizes 1st COVID-19 vaccine in United States 
+    </h4>
+  </a>
+</div>
+`;

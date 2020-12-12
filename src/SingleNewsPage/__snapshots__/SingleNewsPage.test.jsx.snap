@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleNewsPage tests renders correctly 1`] = `
+<div>
+  <div
+    class="Container"
+  >
+    <div
+      class="Content"
+    >
+      <h1>
+        FDA authorizes 1st COVID-19 vaccine in United States 
+      </h1>
+      <h2>
+        ABC News
+      </h2>
+      <p>
+        The Food and Drug Administration authorized the United States' first COVID-19 vaccine for people age 16 and over late Friday, a historic moment in a pandemic that has killed over 290,000 in this
+      </p>
+      <a
+        href="https://www.msn.com/en-us/health/medical/fda-authorizes-1st-covid-19-vaccine-in-united-states/ar-BB1bRB1S"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Read On Orginal Page
+      </a>
+    </div>
+  </div>
+</div>
+`;
