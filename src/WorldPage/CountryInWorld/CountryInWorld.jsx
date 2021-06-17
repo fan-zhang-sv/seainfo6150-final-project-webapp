@@ -6,8 +6,7 @@ import styles from "./CountryInWorld.module.css";
 import { ccToCountryName, ccToMkt } from "../../Modules/countryCodes";
 import NewsCard from "../NewsCard/NewsCard";
 
-const baseUrl =
-  "https://my-news-app.cognitiveservices.azure.com/bing/v7.0/news/search?";
+const baseUrl = "https://api.bing.microsoft.com/v7.0/news?";
 
 const CountryInWorld = (props) => {
   const countryName = ccToCountryName[props.countryCode];
@@ -27,11 +26,14 @@ const CountryInWorld = (props) => {
       fetch(baseUrl + urlParams, {
         headers: {
           "content-type": "application/json",
-          "Ocp-Apim-Subscription-Key": "9e6eb09fc72b40d1abf23d1e5ca46a11",
+          "Ocp-Apim-Subscription-Key": "f23336450eff41789eae442a8e728341",
         },
       })
         .then((response) => response.json())
-        .then((data) => setFetchedData(data["value"]));
+        .then((data) => setFetchedData(data["value"]))
+        .catch((err) => {
+          console.log(err);
+        });
     }
   }, [fetchedData, props.countryCode, urlParams]);
 

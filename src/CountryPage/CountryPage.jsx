@@ -10,8 +10,7 @@ import {
   ccToCategory,
 } from "../Modules/countryCodes";
 
-const baseUrl =
-  "https://my-news-app.cognitiveservices.azure.com/bing/v7.0/news?";
+const baseUrl = "https://api.bing.microsoft.com/v7.0/news?";
 
 const CountryPage = (props) => {
   const cc = props.countryCode;
@@ -34,7 +33,7 @@ const CountryPage = (props) => {
       fetch(baseUrl + urlParams, {
         headers: {
           "content-type": "application/json",
-          "Ocp-Apim-Subscription-Key": "9e6eb09fc72b40d1abf23d1e5ca46a11",
+          "Ocp-Apim-Subscription-Key": "f23336450eff41789eae442a8e728341",
         },
       })
         .then((response) => response.json())
